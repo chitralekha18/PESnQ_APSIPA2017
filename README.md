@@ -1,8 +1,11 @@
 # README: Perceptual Evaluation of Singing Quality
 
 Created by: Chitralekha Gupta
+
 Affiliation: NUS, Singapore
+
 Last edited on: 8th May 2018
+
 Last edited by: Chitralekha Gupta
 
 Please refer to the following paper for details:
@@ -10,17 +13,15 @@ Gupta, C., Li, H. and Wang, Y., 2017, December, Perceptual Evaluation of Singing
 
 ## Contents
 This consists of the following (all used for the paper above):
-1. Audio Dataset (folder: WavfileDataset)
-2. Subjective ground-truths by music-experts (folder: groundtruthfiles)
-3. Python scripts that extract the features for singing quality evaluation (main_file.py)
-4. Output arff files generated from the python scripts, that can be directly used in WEKA (folder: output_arffs)
+- Audio Dataset (folder: WavfileDataset)
+- Subjective ground-truths by music-experts (folder: groundtruthfiles)
+- Python scripts that extract the features for singing quality evaluation (main_file.py)
+- Output arff files generated from the python scripts, that can be directly used in WEKA (folder: output_arffs)
 
 ## Dependencies
 
 - This program is designed for monophonic (without background music) audio files recorded at 16000Hz sampling rate. 
-
 - This requires a reference singing and a test singing file, both singing the same song. Typically short singing clips are expected (<30 seconds) for better performance.
-
 - This program also requires Praat executable to be present in the current folder. If the path changes, please change the path 'Praat.app/Contents/MacOS/Praat' in the script get_mfcc_dtw.py'
 
 ## How to run?
@@ -32,5 +33,5 @@ To use the group mode for your data, change the audio files in the folder Wavfil
 
 ## Contact
 Chitralekha Gupta: chitralekha[at]u[dot]nus[dot]edu
-Haizhou Li: 
-Ye Wang: 
+Haizhou Li: haizhou[dot]li@nus[dot]edu[dot]sg
+Ye Wang: wangye[at]comp[dot]nus[dot]edu[dot]sg
