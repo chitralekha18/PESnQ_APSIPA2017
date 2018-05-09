@@ -33,5 +33,5 @@ To use the group mode for your data, change the audio files in the folder Wavfil
 
 ## Contact
 - Chitralekha Gupta: chitralekha[at]u[dot]nus[dot]edu
-- Haizhou Li: haizhou[dot]li@nus[dot]edu[dot]sg
+- Haizhou Li: haizhou[dot]li[at]nus[dot]edu[dot]sg
 - Ye Wang: wangye[at]comp[dot]nus[dot]edu[dot]sg
