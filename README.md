@@ -9,7 +9,7 @@ Last edited on: 9th May 2018
 Last edited by: Chitralekha Gupta
 
 Please refer to the following paper for details:
-Gupta, C., Li, H. and Wang, Y., 2017, December, Perceptual Evaluation of Singing Quality. In Proceedings of APSIPA Annual Summit and Conference (Vol. 2017, pp. 12-15).
+[Gupta, C., Li, H. and Wang, Y., 2017, December, Perceptual Evaluation of Singing Quality. In Proceedings of APSIPA Annual Summit and Conference (Vol. 2017, pp. 12-15).](https://www.smcnus.org/wp-content/uploads/2013/09/WP-P2.5.pdf)
 
 ## Contents
 This consists of the following (all used for the paper above):
