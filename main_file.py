@@ -25,7 +25,34 @@ feature_extraction = 0 #when single_or_group flag is set to 1, and this flag is 
 tag = 'overall' #this tag denotes the ground-truth (GT) score. It can be overall, pitch, rhythm, vibrato, volume, vqual, pronunciation, pitchDynamicRange, and overall
 reference_singer = 'MCUR' #this is the reference singer in case of group mode
 ###############
+#######################################################
+        ## Final Features are:
+        ## raw_disturbance_features
+        # 1. Rhythm Disturbance (L2-norm)
+        # 2. Raw Pitch Disturbance (L2-norm)
+        # 3. Pitch-derivative Disturbance (L2-norm)
+        # 4. Pitch Median subtracted Disturbance (L2-norm)
+        # 5. Vibrato-frame-based Disturbance (L2-norm)
 
+        ## perceptual_disturbance_features
+        # 1. Rhythm Disturbance (L6+L2-norm)
+        # 2. Raw Pitch Disturbance (L6+L2-norm)
+        # 3. Pitch-derivative Disturbance (L6+L2-norm)
+        # 4. Pitch Median subtracted Disturbance (L6+L2-norm)
+        # 5. Vibrato-frame-based Disturbance (L6+L2-norm)
+
+        ## distance_features
+        # 1. Timbral Difference (Distance)
+        # 2. Raw Pitch Difference (Distance)
+        # 3. Pitch-derivative Difference (Distance)
+        # 4. Pitch-median subtracted Difference (Distance)
+        # 5. Vibrato-segment difference (Distance)
+        # 6. Vibrato: whole pitch contour frame-based evaluation (Distance)
+        # 7. Volume Distance
+        # 8. Pitch Dynamic Range
+        # 9. E.Molina's Rhythm Distance
+        # 10. E.Molina's Rhythm Distance based on pitch
+#######################################################
 groundtruthfolder = 'groundtruthfiles'
 output_arff_folder = 'output_arffs'
 
@@ -60,34 +87,6 @@ def get_features_per_song(folder,GT_file):
         original = [s for s in ref_files if segment_num in s][0]
         GT_score = float([s for s in GT_file_score if s[0] in test][0][1].rstrip('\n'))
 
-        #######################################################
-        ## Final Features contain:
-        ## raw_disturbance_features
-        # 1. Rhythm Disturbance (L2-norm)
-        # 2. Raw Pitch Disturbance (L2-norm)
-        # 3. Pitch-derivative Disturbance (L2-norm)
-        # 4. Pitch Median subtracted Disturbance (L2-norm)
-        # 5. Vibrato-frame-based Disturbance (L2-norm)
-
-        ## perceptual_disturbance_features
-        # 1. Rhythm Disturbance (L6+L2-norm)
-        # 2. Raw Pitch Disturbance (L6+L2-norm)
-        # 3. Pitch-derivative Disturbance (L6+L2-norm)
-        # 4. Pitch Median subtracted Disturbance (L6+L2-norm)
-        # 5. Vibrato-frame-based Disturbance (L6+L2-norm)
-
-        ## distance_features
-        # 1. Timbral Difference (Distance)
-        # 2. Raw Pitch Difference (Distance)
-        # 3. Pitch-derivative Difference (Distance)
-        # 4. Pitch-median subtracted Difference (Distance)
-        # 5. Vibrato-segment difference (Distance)
-        # 6. Vibrato: whole pitch contour frame-based evaluation (Distance)
-        # 7. Volume Distance
-        # 8. Pitch Dynamic Range
-        # 9. E.Molina's Rhythm Distance
-        # 10. E.Molina's Rhythm Distance based on pitch
-        #######################################################
         print original
         print test
 
