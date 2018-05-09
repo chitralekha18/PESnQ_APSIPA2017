@@ -22,16 +22,16 @@ This consists of the following (all used for the paper above):
 
 - This program is designed for monophonic (without background music) audio files recorded at 16000Hz sampling rate. 
 - This requires a reference singing and a test singing file, both singing the same song. Typically short singing clips are expected (<30 seconds) for better performance.
-- This program also requires Praat executable to be present in the current folder. If the path changes, please change the path 'Praat.app/Contents/MacOS/Praat' in the script get_mfcc_dtw.py'
+- This program also requires Praat executable to be present in the current folder. If the path changes, please change the path 'Praat.app/Contents/MacOS/Praat' in the script get_mfcc_dtw.py
 
 ## How to run?
 The python scripts main_file.py and get_mfcc_dtw.py are created by me. 
 To run them, start with main_file.py, and follow the instructions in the file header. The main_file.py can run in two modes: single or group (flag: single_or_group). Single mode for you to check the feature values for a single file with respect to a reference file. Group mode is when you want to extract the features for a group of files and dump into an arff file format. In this program, the reference singer for both the songs "Edelweiss" and "I have a dream" is the professional singer named "MCUR".
 
 To use the single mode for your data, change the reference and test audio clips in the folder wavfile_samples.
-To use the group mode for your data, change the audio files in the folder WavfileDataset, and indicate the reference singer name in 
+To use the group mode for your data, change the audio files in the folder WavfileDataset, and indicate the reference singer name in main_file.py 
 
 ## Contact
-Chitralekha Gupta: chitralekha[at]u[dot]nus[dot]edu
-Haizhou Li: haizhou[dot]li@nus[dot]edu[dot]sg
-Ye Wang: wangye[at]comp[dot]nus[dot]edu[dot]sg
+- Chitralekha Gupta: chitralekha[at]u[dot]nus[dot]edu
+- Haizhou Li: haizhou[dot]li@nus[dot]edu[dot]sg
+- Ye Wang: wangye[at]comp[dot]nus[dot]edu[dot]sg
