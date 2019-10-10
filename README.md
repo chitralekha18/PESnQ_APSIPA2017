@@ -32,7 +32,7 @@ This consists of the following (all used for the paper above):
 - To use the group mode for your data, change the audio files in the folder WavfileDataset, and indicate the reference singer name in main_file.py 
 
 ## License
-The code and models in this repository are licensed under the GNU General Public License Version 3. For commercial use os this code and models, separate commercial licensing is also available. Please see the contacts below.
+The code and models in this repository are licensed under the GNU General Public License Version 3. For commercial use of this code and models, separate commercial licensing is also available. Please see the contacts below.
 
 ## Contact
 - Chitralekha Gupta: chitralekha[at]u[dot]nus[dot]edu
